@@ -11,7 +11,7 @@ const listingsData = [
       'gym'
     ],
     homeType: 'Apartment',
-    image: 'https://www.houzz.com/photos/azurro-residence-building-contemporary-exterior-phvw-vp~1036528'
+    image: 'http://www.stevenwardhair.com/wp-content/uploads/2014/09/modern-apartment-interior-design.jpg'
   },
   {
     address: '3A 6th st.',
@@ -25,7 +25,7 @@ const listingsData = [
       'gym'
     ],
     homeType: 'Apartment',
-    image: 'https://www.houzz.com/photos/crest-butte-apartments-contemporary-exterior-portland-phvw-vp~2093618'
+    image: 'https://p21chong.files.wordpress.com/2017/02/interior-design-in-modern-apartment.jpg'
   },
   {
     address: '15478 toyota ln',
@@ -40,6 +40,62 @@ const listingsData = [
     ],
     homeType: 'Apartment',
     image: 'https://miro.medium.com/max/1260/0*ssSOddwvKv_ESWhu.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
   },
   {
     address: '9050 Marketville',
