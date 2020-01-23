@@ -18,11 +18,14 @@ class App extends Component {
       elevator: false,
       swimming_pool: false,
       gym: false,
-      finished_basement: false
+      finished_basement: false,
+      filteredData: listingsData
     }
     this.change = this.change.bind(this)
+    this.filteredData = this.filteredData.bind(this)
   }
 
+  // Method for change
   change(event) {
     let name = event.target.name
     let value = (event.target.type === 'checkbox') ? event.target.checked : event.target.value
@@ -30,15 +33,27 @@ class App extends Component {
       [name]: value
     }, () => {
       console.log(this.state)
+      this.filteredData()
     })
   }
+
+  // Method for filtering Data
+  filteredData() {
+    let newData = this.state.listingsData.filter((item) => {
+      return item.price >= this.state.min_price && item.price <= this.state.max_price && item.floorSpace >= this.state.min_floor_space && item.floorSpace <= this.state.max_floor_space
+    })
+    this.setState({
+      filteredData: newData
+    })
+  }
+
 
   render() {
     return (<div>
       <Header />
       <section id="content-area">
         <Filter change={this.change} globalState={this.state} />
-        <Listings listingsData={this.state.listingsData} />
+        <Listings listingsData={this.state.filteredData} />
       </section>
     </div>)
   }
