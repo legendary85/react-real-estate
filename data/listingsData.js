@@ -24,7 +24,7 @@ const listingsData = [
       'elevator',
       'gym'
     ],
-    homeType: 'Apartment',
+    homeType: 'Ranch',
     image: 'https://p21chong.files.wordpress.com/2017/02/interior-design-in-modern-apartment.jpg'
   },
   {
@@ -38,7 +38,7 @@ const listingsData = [
       'elevator',
       'gym'
     ],
-    homeType: 'Apartment',
+    homeType: 'Studio',
     image: 'https://miro.medium.com/max/1260/0*ssSOddwvKv_ESWhu.jpg'
   },
   {
