@@ -71,8 +71,8 @@ const listingsData = [
   },
   {
     address: '9050 Marketville',
-    city: 'Seattle',
-    state: 'WA',
+    city: 'Miami',
+    state: 'FL',
     rooms: 1,
     price: 10700,
     floorSpace: 1500,
