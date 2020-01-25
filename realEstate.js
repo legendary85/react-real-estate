@@ -23,11 +23,24 @@ class App extends Component {
       gym: false,
       finished_basement: false,
       filteredData: listingsData,
-      populateFormsData: ''
+      populateFormsData: '',
+      sortby: 'price-dsc'
     }
     this.change = this.change.bind(this)
     this.filteredData = this.filteredData.bind(this)
     this.populateForms = this.populateForms.bind(this)
+  }
+
+
+  componentDidMount() {
+    // sorting lowest price to highest price
+    var listingsData = this.state.listingsData.sort((a, b) => {
+      return a.price - b.price
+    })
+
+    this.setState({
+      listingsData
+    })
   }
 
   // Method for change
@@ -59,10 +72,27 @@ class App extends Component {
         return item.homeType == this.state.homeType
       })
     }
+
+    // sort from lowest price  to highest
+    if (this.state.sortby == 'price-dsc') {
+      newData = newData.sort((a, b) => {
+        return a.price - b.price
+      })
+    }
+
+    // Sort from highest price to lowest
+    if (this.state.sortby == 'price-asc') {
+      newData = newData.sort((a, b) => {
+        return b.price - a.price
+      })
+    }
+
+
     this.setState({
       filteredData: newData
     })
   }
+
 
   // Method for populating Data
   populateForms() {
@@ -73,6 +103,9 @@ class App extends Component {
     cities = new Set(cities)
     cities = [...cities]
 
+    // For sorting cities
+    cities = cities.sort()
+
     // homeType
     var homeTypes = this.state.listingsData.map((item) => {
       return item.homeType
@@ -80,12 +113,18 @@ class App extends Component {
     homeTypes = new Set(homeTypes)
     homeTypes = [...homeTypes]
 
+    // For sorting homeTypes
+    homeTypes = homeTypes.sort()
+
     // bedrooms
     var bedrooms = this.state.listingsData.map((item) => {
       return item.rooms
     })
     bedrooms = new Set(bedrooms)
     bedrooms = [...bedrooms]
+
+    // for sorting number of bedrooms
+    bedrooms = bedrooms.sort()
 
     this.setState({
       populateFormsData: {
@@ -108,7 +147,7 @@ class App extends Component {
         <Filter change={this.change}
           globalState={this.state}
           populateAction={this.populateForms} />
-        <Listings listingsData={this.state.filteredData} />
+        <Listings listingsData={this.state.filteredData} change={this.change} />
       </section>
     </div>)
   }
