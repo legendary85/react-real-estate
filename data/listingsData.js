@@ -38,7 +38,7 @@ const listingsData = [
       'elevator',
       'gym'
     ],
-    homeType: 'Studio',
+    homeType: 'Ranch',
     image: 'https://miro.medium.com/max/1260/0*ssSOddwvKv_ESWhu.jpg'
   },
   {
@@ -66,7 +66,7 @@ const listingsData = [
       'elevator',
       'gym'
     ],
-    homeType: 'Condo',
+    homeType: 'Apartment',
     image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
   },
   {
@@ -84,17 +84,17 @@ const listingsData = [
     image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
   },
   {
-    address: '9050 Marketville',
-    city: 'Seattle',
-    state: 'WA',
-    rooms: 1,
+    address: '123 Tulsa ave',
+    city: 'Tulsa',
+    state: 'OK',
+    rooms: 0,
     price: 10700,
     floorSpace: 1500,
     extras: [
       'elevator',
       'gym'
     ],
-    homeType: 'Condo',
+    homeType: 'Studio',
     image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
   },
   {
