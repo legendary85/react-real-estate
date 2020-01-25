@@ -111,6 +111,118 @@ const listingsData = [
     homeType: 'Condo',
     image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
   },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
+  {
+    address: '9050 Marketville',
+    city: 'Seattle',
+    state: 'WA',
+    rooms: 1,
+    price: 10700,
+    floorSpace: 1500,
+    extras: [
+      'elevator',
+      'gym'
+    ],
+    homeType: 'Condo',
+    image: 'https://photonet.hotpads.com/search/listingPhoto/HotPads/1544033/0001_1159913706_medium.jpg'
+  },
 ]
 
 export default listingsData;
