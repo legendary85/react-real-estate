@@ -4,6 +4,7 @@ import Header from './Header.js'
 import Listings from './Listings.js'
 import Filter from './Filter.js'
 import listingsData from './data/listingsData.js'
+import Footer from './Footer.js'
 
 class App extends Component {
   constructor() {
@@ -25,7 +26,8 @@ class App extends Component {
       filteredData: listingsData,
       populateFormsData: '',
       sortby: 'price-dsc',
-      view: 'box'
+      view: 'box',
+      search: ''
     }
     this.change = this.change.bind(this)
     this.filteredData = this.filteredData.bind(this)
@@ -67,7 +69,7 @@ class App extends Component {
 
   // Method for filtering Data
   filteredData() {
-    let newData = this.state.listingsData.filter((item) => {
+    var newData = this.state.listingsData.filter((item) => {
       return item.price >= this.state.min_price && item.price <= this.state.max_price && item.floorSpace >= this.state.min_floor_space && item.floorSpace <= this.state.max_floor_space && item.rooms >= this.state.bedrooms
     })
 
@@ -94,6 +96,19 @@ class App extends Component {
     if (this.state.sortby == 'price-asc') {
       newData = newData.sort((a, b) => {
         return b.price - a.price
+      })
+    }
+
+    // Search filter
+    if (this.state.search != '') {
+      newData = newData.filter((item) => {
+        var city = item.city.toLowerCase()
+        var searchText = this.state.search.toLowerCase()
+        var n = city.match(searchText)
+
+        if (n != null) {
+          return true
+        }
       })
     }
 
@@ -161,6 +176,7 @@ class App extends Component {
           change={this.change}
           globalState={this.state} changeView={this.changeView} />
       </section>
+      <Footer />
     </div>)
   }
 }

@@ -98,11 +98,11 @@ export default class Listings extends Component {
     return (
       <section id="listings">
         <section className="search-area">
-          <input type="text" name="search" />
+          <input type="text" name="search" onChange={this.props.change} />
         </section>
 
         <section className="sortby-area">
-          <div className='results'>390 results found</div>
+          <div className='results'>{this.props.globalState.filteredData.length} results found</div>
           <div className="sort-options">
             <select name="sortby" className="sortby" onChange={this.props.change}>
 
@@ -119,24 +119,27 @@ export default class Listings extends Component {
 
 
         <section className="listings-results">
+          <div className="row">
 
-          {this.loopListings()}
+            {this.loopListings()}
+          </div>
 
         </section>
 
 
 
         <section id="pagination">
-          <ul className="pages">
-            <li>Prev</li>
-            <li className="active">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>Next</li>
-          </ul>
-
+          <div className="row">
+            <ul className="pages">
+              <li>Prev</li>
+              <li className="active">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>Next</li>
+            </ul>
+          </div>
         </section>
 
       </section>
